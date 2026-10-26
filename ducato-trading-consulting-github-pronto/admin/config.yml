@@ -1,0 +1,36 @@
+# PRIMA DELL’USO: sostituisci cioccolatoamaro79/ducato-trading-consulting con il repository GitHub effettivo.
+backend:
+  name: github
+  repo: cioccolatoamaro79/ducato-trading-consulting
+  branch: main
+  auth_methods:
+    - token
+media_folder: "uploads"
+public_folder: "/uploads"
+locale: it
+collections:
+  - name: aggiornamenti
+    label: "Circolari e aggiornamenti"
+    files:
+      - label: "Gestisci circolari"
+        name: circolari
+        file: "contenuti/circolari.json"
+        format: json
+        fields:
+          - label: "Circolari"
+            name: circolari
+            widget: list
+            summary: "{{fields.data}} · {{fields.titolo}}"
+            collapsed: true
+            fields:
+              - { label: "ID univoco (es. novita-isee-2026)", name: id, widget: string, pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', 'Usa solo lettere minuscole, numeri e trattini'] }
+              - { label: "Titolo", name: titolo, widget: string }
+              - { label: "Data", name: data, widget: datetime, format: 'YYYY-MM-DD', time_format: false }
+              - label: "Categoria"
+                name: categoria
+                widget: select
+                options: ["Fisco", "Imprese", "Paghe e lavoro", "CAF e famiglie", "Previdenza", "Normativa"]
+              - { label: "Sommario breve", name: sommario, widget: text }
+              - { label: "Testo completo (paragrafi separati da una riga vuota)", name: testo, widget: text }
+              - { label: "Link fonte ufficiale (facoltativo)", name: fonte_url, widget: string, required: false }
+              - { label: "Pubblicato", name: pubblicato, widget: boolean, default: false }
