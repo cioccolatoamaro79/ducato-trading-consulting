@@ -1,10 +1,9 @@
-# PRIMA DELL’USO: sostituisci cioccolatoamaro79/ducato-trading-consulting con il repository GitHub effettivo.
 backend:
   name: github
   repo: cioccolatoamaro79/ducato-trading-consulting
   branch: main
   auth_methods:
-    - token
+    - oauth
 media_folder: "uploads"
 public_folder: "/uploads"
 locale: it
