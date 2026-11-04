@@ -9,7 +9,7 @@ public_folder: "/uploads"
 locale: it
 collections:
   - name: aggiornamenti
-    label: "Circolari e aggiornamenti"
+    label: "Il Punto e Virgola"
     files:
       - label: "Gestisci circolari"
         name: circolari
@@ -17,7 +17,7 @@ collections:
         format: json
         fields:
           - label: "Circolari"
-            name: circolari
+            name: Il Punto e Virgola
             widget: list
             summary: "{{fields.data}} · {{fields.titolo}}"
             collapsed: true
