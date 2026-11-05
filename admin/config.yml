@@ -9,15 +9,15 @@ public_folder: "/uploads"
 locale: it
 collections:
   - name: aggiornamenti
-    label: "Il Punto e Virgola"
+    label: "Il punto e virgola"
     files:
-      - label: "Gestisci circolari"
+      - label: "Gestisci le uscite settimanali"
         name: circolari
         file: "contenuti/circolari.json"
         format: json
         fields:
-          - label: "Circolari"
-            name: Il Punto e Virgola
+          - label: "Articoli settimanali"
+            name: circolari
             widget: list
             summary: "{{fields.data}} · {{fields.titolo}}"
             collapsed: true
@@ -32,4 +32,28 @@ collections:
               - { label: "Sommario breve", name: sommario, widget: text }
               - { label: "Testo completo (paragrafi separati da una riga vuota)", name: testo, widget: text }
               - { label: "Link fonte ufficiale (facoltativo)", name: fonte_url, widget: string, required: false }
+              - { label: "Pubblicato", name: pubblicato, widget: boolean, default: false }
+
+  - name: agenda
+    label: "Ducato in agenda"
+    files:
+      - label: "Gestisci le scadenze mensili"
+        name: scadenze
+        file: "contenuti/scadenze.json"
+        format: json
+        fields:
+          - label: "Scadenze"
+            name: scadenze
+            widget: list
+            summary: "{{fields.data}} · {{fields.titolo}}"
+            collapsed: true
+            fields:
+              - { label: "Titolo della scadenza", name: titolo, widget: string }
+              - { label: "Data effettiva di scadenza", name: data, widget: datetime, format: 'YYYY-MM-DD', time_format: false }
+              - label: "Categoria"
+                name: categoria
+                widget: select
+                options: ["Fisco", "IVA", "Contributi e previdenza", "Paghe e lavoro", "Imprese", "CAF e famiglie", "Altro"]
+              - { label: "Chi riguarda e cosa fare", name: descrizione, widget: text }
+              - { label: "Fonte ufficiale (consigliata)", name: fonte_url, widget: string, required: false }
               - { label: "Pubblicato", name: pubblicato, widget: boolean, default: false }
