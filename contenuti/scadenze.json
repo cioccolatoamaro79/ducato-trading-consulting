@@ -1,3 +1,52 @@
 {
-  "scadenze": []
+  "scadenze": [
+    {
+      "titolo": "LIQUIDAZIONE IVA MENSILE/TRIMESTRALE",
+      "data": "2026-11-16",
+      "categoria": "IVA",
+      "descrizione": "Autoliquidazione IVA relativa a ottobre 2026 per i contribuenti mensili;\nAutoliquidazione IVA relativa al III trimestre 2026 per i contribuenti trimestrali.\nVersamento tramite modello F24.",
+      "fonte_url": "",
+      "pubblicato": true
+    },
+    {
+      "titolo": "INPS FISSA III RATA",
+      "data": "2026-11-16",
+      "categoria": "Imprese",
+      "descrizione": "Versamento 3^ rata contributi inps sul minimale 2026 per artigiani e commercianti\ntramite mod. f24.",
+      "fonte_url": "",
+      "pubblicato": true
+    },
+    {
+      "titolo": "INAIL",
+      "data": "2026-11-16",
+      "categoria": "Contributi e previdenza",
+      "descrizione": "Premio INAIL autoliquidazione per chi ha scelto pagamento rateale\nversamento tramite mod. f24 4^ rata.",
+      "fonte_url": "",
+      "pubblicato": true
+    },
+    {
+      "titolo": "IMPOSTE",
+      "data": "2026-11-16",
+      "categoria": "Fisco",
+      "descrizione": "Per i contribuenti che hanno scelto il pagamento rateale delle imposte sui redditi\nversamento tramite mod. f24.",
+      "fonte_url": "",
+      "pubblicato": true
+    },
+    {
+      "titolo": "DATORI DI LAVORO",
+      "data": "2026-11-16",
+      "categoria": "Paghe e lavoro",
+      "descrizione": "Versamento tramite mod. f24 contributi INPS - ritenute IRPEF - addizionali relative alle retribuzioni corrisposte nel mese di ottobre 2026",
+      "fonte_url": "",
+      "pubblicato": true
+    },
+    {
+      "titolo": "RITENUTE ACCONTO PROFESSIONISTI",
+      "data": "2026-11-16",
+      "categoria": "Imprese",
+      "descrizione": "Versamento delle ritenute d'acconto operate nel mese di ottobre 26 sui compensi\ncorrisposti a Professionisti e lavoratori Autonomi",
+      "fonte_url": "",
+      "pubblicato": true
+    }
+  ]
 }
